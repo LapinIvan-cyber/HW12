@@ -61,6 +61,8 @@ public class Main {
             System.out.println("outputArray4: " + outputArray4);
 
             for (int o = 1; o <= 5; o++) {
+                //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+                // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
                 System.out.println("o = " + o);
                 int[] inputArray5 = {5000, -2000, 3000, 7000, 1000};
                 int profitableMonthsCount = 0;
