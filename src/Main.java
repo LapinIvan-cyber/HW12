@@ -26,8 +26,13 @@ public class Main {
         System.out.println("inputArray1: " + java.util.Arrays.toString(inputArray1));
         System.out.println("outputArray1: " + java.util.Arrays.toString(outputArray1));
 
-        int[] inputArray2 = {50000, 60000, 75000, 80000, 90000};
-        double[] outputArray2 = new double[inputArray2.length];
+        int[] inputArray2 = new int[5];
+        inputArray2[0] = 50000;
+        inputArray2[1] = 75000;
+        inputArray2[2] = 43000;
+        inputArray2[3] = 68000;
+        inputArray2[4] = 92000;
+        double[] outputArray2 = new double[5];
         for (int i = 0; i < inputArray2.length; i++) {
             outputArray2[i] = inputArray2[i] * 0.13;
         }
