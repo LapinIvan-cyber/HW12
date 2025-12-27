@@ -26,24 +26,20 @@ public class Main {
         System.out.println("inputArray1: " + java.util.Arrays.toString(inputArray1));
         System.out.println("outputArray1: " + java.util.Arrays.toString(outputArray1));
 
-        int[] inputArray2 = new int[5];
-        inputArray2[0] = 50000;
-        inputArray2[1] = 75000;
-        inputArray2[2] = 43000;
-        inputArray2[3] = 68000;
-        inputArray2[4] = 92000;
-        double[] outputArray2 = new double[5];
-        for (int i = 0; i < inputArray2.length; i++) {
-            outputArray2[i] = inputArray2[i] * 0.13;
+        int[] inputArray2 = {15000, 25000, 32000, 45000, 18000};
+        double[] outputArray2 = new double[inputArray2.length];
+        int index = 0;
+        for (int payment : inputArray2) {
+            outputArray2[index] = payment * 0.13;
         }
         System.out.println("inputArray2:" + java.util.Arrays.toString(inputArray2));
         System.out.println(" outputArray2:" + java.util.Arrays.toString(outputArray2));
 
         int[] inputArray3 = {3000, 7000, 15000, 4000, 6000};
         boolean[] outputArray3 = new boolean[inputArray3.length];
-        int index = 0;
+        int index1 = 0;
         for (int payment : inputArray3) {
-            outputArray3[index++] = payment > 5000;
+            outputArray3[index1++] = payment > 5000;
         }
         System.out.println("inputArray3: " + java.util.Arrays.toString(inputArray3));
         System.out.println("outputArray3: " + java.util.Arrays.toString(outputArray3));
